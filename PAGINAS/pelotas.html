@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang='en'>
+
+	<head>
+		<title></title>
+		<meta charset='utf-8'>
+
+
+		<style>
+			.contenedor {
+				width:700px;
+				height:1000px;
+				border-right:3px solid black;
+				border-left:3px solid black;
+				background-image: url('http://www.fertecsrl.com/wp-content/uploads/2016/11/espacio-exterior-compressor.png');
+				background-size: cover;
+				margin:0 auto;
+			}	
+
+
+			.circulo1 {
+				width:200px;
+				height:200px;
+				border-radius:100%;
+				background: green;
+				border:2px solid black;
+				animation: derecha 3.5s infinite ;
+			}
+
+			.circulo2 {
+				width:200px;
+				height:200px;
+				border-radius:100%;
+				background: red;
+				border:2px solid black;
+				float:right;
+				position:absolute;
+				top:10px;
+				left:820px;
+				animation: izquierda 2.5s infinite;
+			}
+
+			.circulo3 {
+				width:100px;
+				height:100px;
+				border-radius:100%;
+				background: red;
+				border:2px solid black;
+				background-color: blue;
+				margin-top: 50px;
+				animation: azul 3s infinite;
+			}
+
+			.circulo4 {
+				width:150px;
+				height:150px;
+				border-radius:100%;
+				background: red;
+				border:2px solid black;
+				background-color: black;
+				float:right;
+				position:absolute;
+				top:300px;
+				left:868px;
+				animation: negro 2s infinite;
+			}
+
+			.circulo5 {
+				width:80px;
+				height:80px;
+				border-radius:100%;
+				border:2px solid black;
+				background-color: yellow;
+				float:left;
+				position:absolute;
+				top:400px;
+				left:327px;
+				animation: amarillo 1s infinite;
+
+			}
+
+
+
+
+			@keyframes derecha {
+				0%{transform:translate(0px,0px);}
+				25%{transform:translate(490px,0px);}
+				50%{transform:translate(0px,0px);}
+				75%{transform:translate(490px,500px);}
+			}
+
+			@keyframes izquierda {
+				0%{transform:translate(0px,0px);}
+				25%{transform:translate(-490px,0px);}
+				50%{transform:translate(0px,0px);}
+				75%{transform:translate(-490px,500px);}
+			}
+
+			@keyframes azul {
+				0%{transform:translate(0px,0px);}
+				25%{transform:translate(600px,300px);}
+				50%{transform:translate(-2px,300px);}
+				75%{transform:translate(600px,500px);}
+	
+			}
+
+			@keyframes negro {
+				0%{transform:translate(0px,0px);}
+				25%{transform:translate(-547px,200px);}
+				50%{transform:translate(-2px,450px);}
+				75%{transform:translate(-548px,450px);}
+			}
+
+			@keyframes amarillo {
+				0%{transform:translate(0px,0px);}
+				25%{transform:translate(620px,350px);}
+				50%{transform:translate(-5px,430px);}
+				75%{transform:translate(620px,100px);}
+			}
+			
+
+
+		</style>
+	</head>	
+	<body>
+
+		<div class='contenedor'>
+			<div class='circulo1'></div>
+			<div class='circulo2'></div>
+			<div class='circulo3'></div>
+			<div class='circulo4'></div>
+			<div class='circulo5'></div>
+		</div>
+
+</body>
+</html>	

@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang='en'>
+
+	<head>
+		<title></title>
+		<meta charset='utf-8'>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+		<link rel="stylesheet" href="">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<style>
+
+		nav {
+			display:flex;
+			justify-content:center;
+			height:200px;
+			padding:20px;
+			background-image: url('https://cdn3.areajugones.es/wp-content/uploads/2017/09/Batman-Arkham-Origins-810x400.jpg');
+			background-size: cover;
+
+		}
+
+		nav a {
+			margin-left: 20px;
+			margin-top:40px;
+			font-weight:bold;
+			text-transform: uppercase;
+			color:green;
+			text-decoration: none;
+
+		}
+
+		nav a:hover {
+			color:white;
+		}
+
+		h1, h2, p {
+			margin-top:10px;
+		}
+
+		body {
+			background-color: #2fa4ce;
+		}
+
+		.container .imagenes {
+			display:flex;
+			justify-content: space-around;
+
+		}
+
+		.container .imagenes .superman {
+			width: 350px;
+			height:400px;
+			border:2px solid black;
+		
+
+		}
+
+		.container .imagenes .Batman {
+			border:2px solid black;
+		
+
+		}
+
+		main::after {
+			content:"";
+			display:block;
+			clear:both;
+			}
+			
+		footer {
+			background-color: #2fa4ce;
+			color:white;
+			font-weight: bold;
+			text-align:center;
+			padding:10px;
+			margin-top:15px;
+			
+		}	
+
+		form {
+			margin:10px;
+			background-color: #2d82c4;
+			padding:15px;
+
+		}
+
+		form div {
+			margin-bottom:10px;
+		}
+
+		form div .primero {
+			color:black;
+			font-weight:bold;
+		}
+
+		form div input, form div textarea {
+			border:3px dotted blue;
+		}
+
+		form div button {
+			margin-left: 10px;
+			border:2px solid black;
+			color:blue;
+			font-weight:bold;
+			background-color: yellow;
+		}
+		
+		@media (max-width: 767px) {
+			body{ background-color: #a9c185; }
+			nav {flex-direction: column;}
+			nav a {margin: 0; margin-bottom: 10px}
+			body {font-size: 70%;}
+			h1, h2 {color:blue;}
+
+			.container .imagenes {display:flex; flex-direction: column;}
+			.container .imagenes .superman {width:auto;}
+			form {background-color:#b77597;}
+			form div input, form div textarea {border:3px dotted blue;width:100%;}
+			form div input {display:block; width:58px;}
+			form div .input1 {width:100%;} 
+		</style>
+	</head>
+	<body>
+	
+	<nav class='container-fluid'>
+		<a href='#'>Home</a>
+		<a href='#'>Servicios</a>
+		<a href='#'>contacto</a>
+	
+	</nav>	
+
+	<main class='container'>
+
+	<h1>Dark Knight</h1>
+	
+	<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum</p>
+
+	<div class='imagenes'>
+		<img class='Batman' src='https://i.pinimg.com/originals/38/02/d7/3802d7dc056f424edcda561616b1b6e9.jpg' alt='El Bati'>
+		<img class='Batman' src='http://media.ignimgs.com/media/ign/imgs/minisites/topN/comic-book-heroes/2_Batman.jpg' alt='El Bati2'>
+	</div>
+
+	<h2>Man of Steel</h2>
+
+	<p>Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum</p>
+
+		<div class='imagenes'>
+
+			<img class='superman' src='https://i.pinimg.com/736x/ec/e5/bf/ece5bffbb78ef52c38e5888734c2ad1b--superman-comic-comic-superheroes.jpg' alt='supi'>
+			<img class='superman' src='https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/main_element/public/media/image/2017/01/superman-nuevo-traje.jpg?itok=uBojQI-Q' alt='supi2'>
+			<img class='superman' src='https://media.salon.com/2014/09/superman.jpg' alt='supi3'>
+
+
+		</div>
+
+		<form class='form' method='get' action='#' enctype='application/x-www-urlencoded'>
+		
+			<div>	
+				<label class='primero' for='nombre'>Nombre: </label><br>
+				<input class='input1' type='text' name='nombre' value='' placeholder='Ingresa tu nombre' id='nombre'>
+			</div>
+
+			<div>
+				<label class='primero'>Password: </label><br>
+				<input type='password' class='input1' plcaeholder='ingresa tu contraseña' name='clave' value=''>
+			</div>	
+
+			<div>
+				<label class='primero'>Sexo: </label><br>
+				<label><input type='radio' name='sexo' value='h'> HOMBRE</label><br>
+				<label><input type='radio' name='sexo' value='m' > MUJER</label><br>
+			</div>	
+
+			<div>
+				<label class='primero'>Nacionalidad</label><br>
+				<select name='nacionalidad' size='3'>
+					<option value='arg' selected>Argentina</option>
+					<option value='bra'>Brazil</option>
+					<option value='chi'>Chile</option>
+					<option value='col'>Colombia</option>
+					<option value='uru'>Uruguay</option>
+					<option value='par'>Paraguay</option>
+				</select>	
+			</div>
+
+			<div>
+				<label class='primero'>Carga tu Foto</label><br>
+				<input class='input1' type='file' name='foto' accept='image/jpeg,imege/png'>
+			</div>	
+
+			<div>
+				<label class='primero'>Marca el superheroe que más conozcas</label><br>
+				<label><input type='checkbox' name='batman' value='batman' checked> El caballero de la noche</label><br>
+				<label><input type='checkbox' name='superman' value='superman'> Superman</label><br>
+				<label><input type='checkbox' name='spiderman' value='spiderman'> Spiderman</label><br>
+				<label><input type='checkbox' name='green' value='green'> Green Arrow</label><br>
+			
+			</div>
+
+			<div>
+				<label class='primero'>Comentario: </label><br>
+				<textarea name='comentario' cols='60' rows='10'></textarea>
+			</div>
+
+			<div>
+				<button>ENVIAR</button>
+				<button>BORRAR</button>
+			</div>	
+
+		</form>	
+
+	</main>
+
+	<footer>
+		Todos los Derechos Reservados - Produccion Duke S.A - 2018
+	</footer>
+	</body>
+</html>	

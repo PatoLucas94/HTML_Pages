@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang='en'>
+
+	<head>
+		<title></title>
+		<meta charset='utf-8'>
+		<link rel='stylesheet' href='fonts/style.css'>
+
+		<style>
+
+			body {
+				background: linear-gradient(lightblue 1%,red);
+				background-repeat: no-repeat;
+				background-size: auto;
+				height:630px;
+			}
+
+			h1 {
+				text-align: center;
+				color:black;
+				font-size: 35px;
+				font-weight: bold;
+
+			}
+
+			.container {
+				display:inline-block;
+				width:700px;
+				height:500px;
+				margin-left:330px;
+				margin-top:50px;
+
+			}
+
+
+			div {
+				width:200px;
+				height:200px;
+				border:2px solid black;
+				margin-left:20px;
+				margin-top: 30px;
+				display:inline-block;
+			}
+
+			img {
+				width:200px;
+				height:200px;
+			}
+
+			.marvel {
+				width:200px;
+				height:200px;
+				background-image: url('https://i2.wp.com/modogeeks.com/wp-content/uploads/2017/07/Marvel-Logo-1.png?ssl=1');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+
+			.dc {
+				width:200px;
+				height:200px;
+				background-image: url('https://i.pinimg.com/originals/cb/22/22/cb22229af35549bacc1d435dac06094b.jpg');
+				background-size: 100% 100%;
+				background-repeat: no-repeat;
+			}
+
+			.spiderman {
+				background-image: url('https://i.pinimg.com/originals/b7/34/b2/b734b2e295bd1895e9b433345c897c25.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			.batman {
+				background-image: url('http://www.psicocine.com/wp-content/uploads/2016/03/Batman-Jim-Lee-620x350.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			.ironman {
+				background-image: url('https://upload.wikimedia.org/wikipedia/en/thumb/e/e0/Iron_Man_bleeding_edge.jpg/220px-Iron_Man_bleeding_edge.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			.green_arrow {
+				background-image: url('https://i.pinimg.com/originals/8f/87/fa/8f87fae4bcbce280791978801b7796f1.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			.capi {
+				background-image: url('https://i.annihil.us/u/prod/marvel//universe3zx/images/f/fc/Ultimate_cap_hed.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			.superman {
+				background-image: url('https://i.pinimg.com/originals/42/dc/22/42dc2275f6e8e417bfc08a9300fc7652.jpg');
+				background-size: 100% 100%;
+				width:200px;
+				height:200px;
+			}
+
+			header {
+				width:700px;
+				display:flex;
+				justify-content: space-around;
+				margin-left:330px;
+				margin-top: 15px;
+			}
+
+			.boton_especial {
+				float:left;
+				position:absolute;
+				top:25px;
+				left:40px;
+				padding:25px;
+				font-size: 25px;
+				border:2px solid black;
+				font-weight: bold;
+				animation: cambia_color 1s ease;
+				animation-iteration-count: 4.5;
+				box-shadow: 5px 10px 18px black;
+
+			}
+
+			.boton10 {
+				position:absolute;
+				top:105px;
+				left:682px;
+				padding:10px;
+				color:black;
+				font-weight: bold;
+				border:2px solid lightgreen;
+			}
+
+			.icon-flecha:before {
+				  content: "\e967";
+				}
+
+			@keyframes cambia_color {
+				0%{background:#42f4eb;}
+				50%{background:#d4e825;}
+				100%{background:#be58ce;}
+			}
+
+			@keyframes bounce {
+						  from,
+						  20%,
+						  53%,
+						  80%,
+						  to {
+						    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+						    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+						    -webkit-transform: translate3d(0, 0, 0);
+						    transform: translate3d(0, 0, 0);
+						  }
+
+						  40%,
+						  43% {
+						    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+						    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+						    -webkit-transform: translate3d(0, -30px, 0);
+						    transform: translate3d(0, -30px, 0);
+						  }
+
+						  70% {
+						    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+						    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+						    -webkit-transform: translate3d(0, -15px, 0);
+						    transform: translate3d(0, -15px, 0);
+						  }
+
+						  90% {
+						    -webkit-transform: translate3d(0, -4px, 0);
+						    transform: translate3d(0, -4px, 0);
+						  }
+						}
+
+
+
+
+		</style>
+
+
+
+
+	</head>	
+	<body id='cuerpo'>
+
+		<button id='boton_principal' class='boton_especial'>Activar Botones !</button>
+
+		<header>	
+
+			<button id='boton1'>Show Marvel</button>
+
+			<h1>Marvel vs DC</h1>
+
+
+			<button id='boton2'>Show DC</button>
+
+			<button id='boton_secundario' class='boton10'><span class='icon-flecha'></span></button>
+
+		</header>
+	
+
+		<section class='container'>
+
+			<div id='rojo1' class='marvel'></div>
+			<div id='azul10' class='dc'></div>
+			<div id='rojo2' class='marvel'></div>
+			<div id='azul11' class='dc'></div>
+			<div id='rojo3' class='marvel'></div>
+			<div id='azul12' class='dc'></div>
+
+		</section>
+
+
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+		<script>
+
+
+			$(document).ready(function(){
+					$('#boton1, #boton2').attr('disabled','disabled');
+				
+			});
+				
+			
+
+			$('#boton_principal').on('click',function(){
+				$('#boton1, #boton2').removeAttr('disabled', 'disabled');
+				$('.container').hide(function(){
+					alert('Estan esperando a que los apretes, ¿¿ Marvel o DC ??');
+				});
+				$('#boton1').css({'font-weight':'bold','background':'#efeaea','color':'#ba2a2a', 'border':'2px solid red','box-shadow':'10px #888888','animation':'bounce 2s infinite'});
+				$('#boton2').css({'font-weight':'bold','background':'#68696b','color':'#0643db', 'border':'2px solid blue','animation':'bounce 2s infinite'});
+			});
+
+			$('#boton_secundario').on('click',function(){
+				$('.container').show(function(){
+					$('.marvel, .dc').show();
+				});
+			});
+
+
+				$('#boton1').on('click',function(){
+					$('.container').slideDown('slow', function(){
+						$('.marvel').show();
+						$('.dc').hide();
+					});
+				});
+
+				$('#boton2').on('click',function(){
+					$('.container').slideDown('slow', function(){
+						$('.dc').show();
+						$('.marvel').hide();
+					});
+				});
+
+
+			$('#rojo1').mouseenter(function(){
+				$('#rojo1').addClass('spiderman');
+			});
+
+			$('#rojo1').mouseleave(function(){
+				$('#rojo1').removeClass('spiderman');
+			});
+
+			$('#azul10').mouseenter(function(){
+				$('#azul10').addClass('batman');
+			});
+
+			$('#azul10').mouseleave(function(){
+				$('#azul10').removeClass('batman');
+			});
+
+			$('#rojo2').mouseenter(function(){
+				$('#rojo2').addClass('ironman');
+			});
+
+			$('#rojo2').mouseleave(function(){
+				$('#rojo2').removeClass('ironman');
+			});
+
+			$('#azul11').mouseenter(function(){
+				$('#azul11').addClass('green_arrow');
+			});
+
+			$('#azul11').mouseleave(function(){
+				$('#azul11').removeClass('green_arrow');
+			});
+
+			$('#rojo3').mouseenter(function(){
+				$('#rojo3').addClass('capi');
+			});
+
+			$('#rojo3').mouseleave(function(){
+				$('#rojo3').removeClass('capi');
+			});
+
+			$('#azul12').mouseenter(function(){
+				$('#azul12').addClass('superman');
+			});
+
+			$('#azul12').mouseleave(function(){
+				$('#azul12').removeClass('superman');
+			});			
+
+		</script>	
+
+</body>
+</html>	
