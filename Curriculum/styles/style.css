@@ -51,15 +51,16 @@ footer{
 
 @media (max-width: 500px) {
     /*.carousel-inner{margin-left: 40px;}*/
-    img {margin-left: 5px; }
+    img {margin-left: 1px; }
     .sectionA{display:block; flex-direction: column; width:auto; margin-bottom: 20px;}
     .contenedorPrincipal{display:block; flex-direction: column; margin-bottom: 20px;}
     .contenedorPrincipal1{display:block; flex-direction: column; margin-bottom: 20px;}
-    main .contenedorHobbies .contenedorContact .contenedorWisdom .contenedorPrincipal .contenedorScript .contenedorPrincipal1{width:auto;}
-    .imagenWisdom{margin-left: 10px; }
+  .indexDescripcion{width:auto;}
+  .contenedorPrincipal .contenedor1{width:auto;}
+  .contenedorScript .imagenesSuper{width:auto;}
+  .contenedorWisdom .imagenWisdom{float: left; margin-left:25px; margin-bottom: 10px;}
+  .contenedorHobbies{width:auto; margin-left: 10px;}
+  .contenedorContact{width:100%;}
+  textarea{width:100%;}
 
 }
-
-
-
-
