@@ -51,11 +51,12 @@ footer{
 
 @media (max-width: 500px) {
     /*.carousel-inner{margin-left: 40px;}*/
-    img{margin-left: 5px; }
-    .sectionA{display:block; flex-direction: column; margin-bottom: 20px;}
+    img {margin-left: 5px; }
+    .sectionA{display:block; flex-direction: column; width:auto; margin-bottom: 20px;}
     .contenedorPrincipal{display:block; flex-direction: column; margin-bottom: 20px;}
     .contenedorPrincipal1{display:block; flex-direction: column; margin-bottom: 20px;}
-    textarea{width:100%;}
+    main .contenedorHobbies .contenedorContact .contenedorWisdom .contenedorPrincipal .contenedorScript .contenedorPrincipal1{width:auto;}
+    .imagenWisdom{margin-left: 10px; }
 
 }
 
